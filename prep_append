@@ -1,0 +1,9 @@
+python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin  :dashboard-maven-plugin
+python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin  :maven-assembly-plugin
+
+# NoClassDefFoundError: org/w3c/dom/ElementTraversal
+python3 /usr/share/java-utils/pom_editor.py pom_add_dep        xml-apis:xml-apis::test
+
+sed -i.hamcrest '/startsWith/d' src/test/java/com/google/code/maven_replacer_plugin/file/FileUtilsTest.java
+python3 /usr/share/java-utils/mvn_file.py :replacer replacer
+python3 /usr/share/java-utils/mvn_alias.py :replacer com.google.code.maven-replacer-plugin:maven-replacer-plugin

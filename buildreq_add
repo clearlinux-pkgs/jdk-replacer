@@ -1,0 +1,24 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+apache-ant
+jdk-commons-beanutils
+jdk-commons-digester
+jdk-commons-io
+jdk-commons-lang
+jdk-hamcrest
+jdk-junit4
+jdk-maven-common-artifact-filters
+jdk-maven-compiler-plugin
+jdk-maven-filtering
+jdk-maven-jar-plugin
+jdk-maven-javadoc-plugin
+jdk-maven-plugin-tools
+jdk-maven-resources-plugin
+jdk-maven-shared-incremental
+jdk-mockito
+jdk-plexus-build-api
+jdk-plexus-compiler
+jdk-sonatype-oss-parent
+jdk-surefire
+jdk-xerces-j2
+jdk-xml-commons-apis
